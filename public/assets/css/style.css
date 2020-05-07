@@ -14,6 +14,7 @@
         font-family: IRANSans;
         direction: rtl;
         transition: 0.5s;
+        background-color: black;
     }
     
     .fixed-bottom img {
@@ -27,31 +28,7 @@
         width: 40px;
     }
     
-    #section01 {
-        background-image: url(../img/karan-karnik-w7WVYjY8c5w-unsplash.jpg);
-        background-size: cover;
-        background-position: 0 -700px;
-        padding-top: 66px;
-    }
-    
-    #section02 {
-        background-image: url(../img/nik-ramzi-nik-hassan-mbpKRQEjZis-unsplash.jpg);
-        background-size: cover;
-        background-position: center;
-        padding-top: 66px;
-    }
-    
-    #section03 {
-        background-image: url(../img/irina-iriser-dxk6tMxNkJY-unsplash.jpg);
-        background-size: cover;
-        background-position: center;
-        padding-top: 66px;
-    }
-    
-    #section04 {
-        background-image: url(../img/thomas-millot-zndOvUadrTg-unsplash.jpg);
-        background-size:contain;
-        background-repeat: repeat no-repeat;
+    #section01,#section02,#section03,#section04 {
         background-position: center;
         padding-top: 66px;
     }
@@ -71,9 +48,6 @@
     }
 
     @media (max-width:769px){
-        .display-mobile{
-            background-color: black;
-        }
         .only-md{
             display: none !important;
         }
