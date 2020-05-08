@@ -1,38 +1,50 @@
 import React from 'react';
+import Header from './components/Header';
+import Section01 from './components/Section01';
+import Section02 from './components/Section02';
+import Section03 from './components/Section03';
+import Section04 from './components/Section04';
+import Section05 from './components/Section05';
+import Footer from './components/Footer';
 
 class App extends React.Component {
 
   constructor(props) {
     super(props);
-    this.componentDidMount = this.componentDidMount.bind(this)
     this.state = {
       pic: []
     }
   }
 
-  componentDidMount() {
-    let query = 'jellyfish';
-    let per_page = '4';
-    let orientation = 'landscape';
-    let page=Math.floor(Math.random()*30)+1; //there are only 30 pages
-    let color = 'black';
-    fetch(`https://api.unsplash.com/search/photos/?client_id=_PddIXc9E6hWsR9-ItExkNG46hXQiu8JjJNZVE46O5s&query=${query}&per_page=${per_page}&orientation=${orientation}&page=${page}&color=${color}`)
-      .then(res => res.json())
-      .then(
-        json => {
-          this.setState({
-            pic: json.results
-          })
-        }
-      )
+  componentWillMount() {
+    setInterval(() => {
+      let query = 'jellyfish';
+      let per_page = '4';
+      let orientation = 'landscape';
+      let page = Math.floor(Math.random() * 30) + 1; //total_pages 30
+      let color = 'black';
+      fetch(`https://api.unsplash.com/search/photos/?client_id=_PddIXc9E6hWsR9-ItExkNG46hXQiu8JjJNZVE46O5s&query=${query}&per_page=${per_page}&orientation=${orientation}&page=${page}&color=${color}`)
+        .then(res => res.json())
+        .then(
+          json => {
+            this.setState({
+              pic: json.results
+            })
+          }
+        )
+    }, 15000)
   }
 
   render() {
     return (
       <div>
-        <div>
-          Hello World!!
-        </div>
+        <Header />
+        <Section01 src={this.state.pic} picNumber={0} />
+        <Section02 src={this.state.pic} picNumber={1} />
+        <Section03 src={this.state.pic} picNumber={2} />
+        <Section04 src={this.state.pic} picNumber={3} />
+        <Section05 src={this.state.pic} />
+        <Footer />
       </div>
     )
   }
