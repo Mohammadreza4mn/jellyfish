@@ -16,14 +16,26 @@ class App extends React.Component {
     }
   }
 
-  componentWillMount() {
+  componentDidMount() {
+    let page = Math.floor(Math.random() * 30) + 1; //total_pages 30
+
+    const query = 'jellyfish';
+    const per_page = '4';
+    const orientation = 'landscape';
+    fetch(`https://api.unsplash.com/search/photos/?client_id=_PddIXc9E6hWsR9-ItExkNG46hXQiu8JjJNZVE46O5s&query=${query}&per_page=${per_page}&orientation=${orientation}&page=${page}`)
+    .then(res => res.json())
+    .then(
+      json => {
+        this.setState({
+          pic: json.results
+        })
+      }
+    )
+    
     setInterval(() => {
-      let query = 'jellyfish';
-      let per_page = '4';
-      let orientation = 'landscape';
       let page = Math.floor(Math.random() * 30) + 1; //total_pages 30
-      let color = 'black';
-      fetch(`https://api.unsplash.com/search/photos/?client_id=_PddIXc9E6hWsR9-ItExkNG46hXQiu8JjJNZVE46O5s&query=${query}&per_page=${per_page}&orientation=${orientation}&page=${page}&color=${color}`)
+      //const color = 'black';
+      fetch(`https://api.unsplash.com/search/photos/?client_id=_PddIXc9E6hWsR9-ItExkNG46hXQiu8JjJNZVE46O5s&query=${query}&per_page=${per_page}&orientation=${orientation}&page=${page}`)
         .then(res => res.json())
         .then(
           json => {
