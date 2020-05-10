@@ -5,9 +5,9 @@ class Section05 extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            htmlPhotographer: ['https://unsplash.com/photos/w7WVYjY8c5w','https://unsplash.com/photos/dxk6tMxNkJY','https://unsplash.com/photos/mbpKRQEjZis','https://unsplash.com/photos/zndOvUadrTg'],
-            namePhotographer: ['Karan Karnik','Irina Iriser','Nik Ramzi Nik Hassan','Thomas Millot'],
-            imgPhotographer: ['public/../assets/img/karan-karnik-w7WVYjY8c5w-unsplash.jpg','public/../assets/img/irina-iriser-dxk6tMxNkJY-unsplash.jpg','public/../assets/img/nik-ramzi-nik-hassan-mbpKRQEjZis-unsplash.jpg','public/../assets/img/thomas-millot-zndOvUadrTg-unsplash.jpg']
+            htmlPhotographer: ['https://unsplash.com/photos/KLbUohEjb04', 'https://unsplash.com/photos/dxk6tMxNkJY', 'https://unsplash.com/photos/mbpKRQEjZis', 'https://unsplash.com/photos/tBnLsg_VDJw'],
+            namePhotographer: ['Pathum Danthanarayana', 'Irina Iriser', 'Nik Ramzi Nik Hassan', 'Mathieu Turle'],
+            imgPhotographer: ['public/../assets/img/pathum-danthanarayana-KLbUohEjb04-unsplash.jpg', 'public/../assets/img/irina-iriser-dxk6tMxNkJY-unsplash.jpg', 'public/../assets/img/nik-ramzi-nik-hassan-mbpKRQEjZis-unsplash.jpg', 'public/../assets/img/mathieu-turle-tBnLsg_VDJw-unsplash.jpg']
         }
     }
 
@@ -42,7 +42,7 @@ class Section05 extends React.Component {
                     <div className="container">
                         <div className="card-columns text-center only-md">
                             <div className="card p-3">
-                                <img src={this.state.imgPhotographer[0]}  className="card-img-top" />
+                                <img src={this.state.imgPhotographer[0]} className="card-img-top" />
                                 <div className="card-body">
                                     <div className="card-title">
                                         <a href={this.state.htmlPhotographer[0]}>Photo by {this.state.namePhotographer[0]} on Unsplash</a>
@@ -50,7 +50,7 @@ class Section05 extends React.Component {
                                 </div>
                             </div>
                             <div className="card p-3">
-                                <img src="public/../assets/img/eugenia-clara-95GPGCq_cdg-unsplash.jpg"  className="card-img-top" />
+                                <img src="public/../assets/img/eugenia-clara-95GPGCq_cdg-unsplash.jpg" className="card-img-top" />
                                 <div className="card-body">
                                     <div className="card-title">
                                         <a href="https://unsplash.com/photos/95GPGCq_cdg">Photo by Eugenia Clara on Unsplash</a>
@@ -58,7 +58,7 @@ class Section05 extends React.Component {
                                 </div>
                             </div>
                             <div className="card p-3">
-                                <img src={this.state.imgPhotographer[1]}  className="card-img-top" />
+                                <img src={this.state.imgPhotographer[1]} className="card-img-top" />
                                 <div className="card-body">
                                     <div className="card-title">
                                         <a href={this.state.htmlPhotographer[1]}>Photo by {this.state.namePhotographer[1]} on Unsplash</a>
@@ -66,7 +66,7 @@ class Section05 extends React.Component {
                                 </div>
                             </div>
                             <div className="card p-3">
-                                <img src={this.state.imgPhotographer[2]}  className="card-img-top" />
+                                <img src={this.state.imgPhotographer[2]} className="card-img-top" />
                                 <div className="card-body">
                                     <div className="card-title">
                                         <a href={this.state.htmlPhotographer[2]}>Photo by {this.state.namePhotographer[2]} on
@@ -75,13 +75,15 @@ class Section05 extends React.Component {
                                 </div>
                             </div>
                             <div className="card p-3">
-                                <img src="public/../assets/img/m.m.jpg"  className="card-img-top" />
+                                <img src="public/../assets/img/m.m.jpg" className="card-img-top" />
                                 <div className="card-body">
-                                    <p className="rounded-pill bg-dark text-light">M.M</p>
+                                    <a href="https://github.com/Mohammadreza4mn">
+                                        <p className="rounded-pill bg-dark text-light">M . M</p>
+                                    </a>
                                 </div>
                             </div>
                             <div className="card p-3">
-                                <img src="public/../assets/img/palash-jain-GxWZCbUolf0-unsplash.jpg"  className="card-img-top" />
+                                <img src="public/../assets/img/palash-jain-GxWZCbUolf0-unsplash.jpg" className="card-img-top" />
                                 <div className="card-body">
                                     <div className="card-title">
                                         <a href="https://unsplash.com/photos/GxWZCbUolf0">Photo by Palash Jain on Unsplash</a>
@@ -89,7 +91,7 @@ class Section05 extends React.Component {
                                 </div>
                             </div>
                             <div className="card p-3">
-                                <img src="public/../assets/img/tony-reid-luanaxyvbpQ-unsplash.jpg"  className="card-img-top" />
+                                <img src="public/../assets/img/tony-reid-luanaxyvbpQ-unsplash.jpg" className="card-img-top" />
                                 <div className="card-body">
                                     <div className="card-title">
                                         <a href="https://unsplash.com/photos/luanaxyvbpQ">Photo by Tony Reid on Unsplash</a>
@@ -97,7 +99,7 @@ class Section05 extends React.Component {
                                 </div>
                             </div>
                             <div className="card p-3">
-                                <img src={this.state.imgPhotographer[3]}  className="card-img-top" />
+                                <img src={this.state.imgPhotographer[3]} className="card-img-top" />
                                 <div className="card-body">
                                     <div className="card-title">
                                         <a href={this.state.htmlPhotographer[3]}>Photo by {this.state.namePhotographer[3]} on Unsplash</a>
@@ -120,7 +122,7 @@ class Section05 extends React.Component {
                                 <div className="carousel-inner text-center">
                                     <div className="carousel-item active">
                                         <div className="card p-3">
-                                            <img src={this.state.imgPhotographer[0]}  className="card-img-top" />
+                                            <img src={this.state.imgPhotographer[0]} className="card-img-top" />
                                             <div className="card-body">
                                                 <div className="card-title">
                                                     <a href={this.state.htmlPhotographer[0]}>Photo by {this.state.namePhotographer[0]} on
@@ -131,7 +133,7 @@ class Section05 extends React.Component {
                                     </div>
                                     <div className="carousel-item">
                                         <div className="card p-3">
-                                            <img src="public/../assets/img/eugenia-clara-95GPGCq_cdg-unsplash.jpg"  className="card-img-top" />
+                                            <img src="public/../assets/img/eugenia-clara-95GPGCq_cdg-unsplash.jpg" className="card-img-top" />
                                             <div className="card-body">
                                                 <div className="card-title">
                                                     <a href="https://unsplash.com/photos/95GPGCq_cdg">Photo by Eugenia Clara on
@@ -142,7 +144,7 @@ class Section05 extends React.Component {
                                     </div>
                                     <div className="carousel-item">
                                         <div className="card p-3">
-                                            <img src={this.state.imgPhotographer[1]}  className="card-img-top" />
+                                            <img src={this.state.imgPhotographer[1]} className="card-img-top" />
                                             <div className="card-body">
                                                 <div className="card-title">
                                                     <a href={this.state.htmlPhotographer[1]}>Photo by {this.state.namePhotographer[1]} on
@@ -153,7 +155,7 @@ class Section05 extends React.Component {
                                     </div>
                                     <div className="carousel-item">
                                         <div className="card p-3">
-                                            <img src={this.state.imgPhotographer[2]}  className="card-img-top" />
+                                            <img src={this.state.imgPhotographer[2]} className="card-img-top" />
                                             <div className="card-body">
                                                 <div className="card-title">
                                                     <a href={this.state.htmlPhotographer[2]}>Photo by {this.state.namePhotographer[2]} on
@@ -164,15 +166,17 @@ class Section05 extends React.Component {
                                     </div>
                                     <div className="carousel-item">
                                         <div className="card p-3">
-                                            <img src="public/../assets/img/m.m.jpg"  className="card-img-top" />
+                                            <img src="public/../assets/img/m.m.jpg" className="card-img-top" />
                                             <div className="card-body">
-                                                <p className="rounded-pill bg-dark text-light">M.M</p>
+                                                <a href="https://github.com/Mohammadreza4mn">
+                                                    <p className="rounded-pill bg-dark text-light">M . M</p>
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
                                     <div className="carousel-item">
                                         <div className="card p-3">
-                                            <img src="public/../assets/img/palash-jain-GxWZCbUolf0-unsplash.jpg"  className="card-img-top" />
+                                            <img src="public/../assets/img/palash-jain-GxWZCbUolf0-unsplash.jpg" className="card-img-top" />
                                             <div className="card-body">
                                                 <div className="card-title">
                                                     <a href="https://unsplash.com/photos/GxWZCbUolf0">Photo by Palash Jain on
@@ -183,7 +187,7 @@ class Section05 extends React.Component {
                                     </div>
                                     <div className="carousel-item">
                                         <div className="card p-3">
-                                            <img src="public/../assets/img/tony-reid-luanaxyvbpQ-unsplash.jpg"  className="card-img-top" />
+                                            <img src="public/../assets/img/tony-reid-luanaxyvbpQ-unsplash.jpg" className="card-img-top" />
                                             <div className="card-body">
                                                 <div className="card-title">
                                                     <a href="https://unsplash.com/photos/luanaxyvbpQ">Photo by Tony Reid on
@@ -194,7 +198,7 @@ class Section05 extends React.Component {
                                     </div>
                                     <div className="carousel-item">
                                         <div className="card p-3">
-                                            <img src={this.state.imgPhotographer[3]}  className="card-img-top" />
+                                            <img src={this.state.imgPhotographer[3]} className="card-img-top" />
                                             <div className="card-body">
                                                 <div className="card-title">
                                                     <a href={this.state.htmlPhotographer[3]}>Photo by {this.state.namePhotographer[3]} on

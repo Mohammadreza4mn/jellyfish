@@ -5,7 +5,7 @@ class Section04 extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            backgroundImage: { backgroundImage: 'url(public/../assets/img/thomas-millot-zndOvUadrTg-unsplash.jpg)' }
+            backgroundImage: { backgroundImage: 'url(public/../assets/img/mathieu-turle-tBnLsg_VDJw-unsplash.jpg)' }
         }
     }
 
