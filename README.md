@@ -1,3 +1,4 @@
+:stopwatch: Every 15 seconds the background image is changed using Api :framed_picture:
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
