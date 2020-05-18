@@ -1,5 +1,5 @@
 import React from 'react';
-
+var timer;
 class Section01 extends React.Component {
 
     constructor(props) {
@@ -10,7 +10,7 @@ class Section01 extends React.Component {
     }
 
     componentDidMount() {
-        setInterval(() => {
+        timer=setInterval(() => {
             let url = [];
             this.props.src.map(
                 item => (
@@ -26,6 +26,10 @@ class Section01 extends React.Component {
             )
         }, 15000)
     }
+
+    componentWillUnmount(){
+        clearTimeout(timer)
+      }
 
     render() {
         return (

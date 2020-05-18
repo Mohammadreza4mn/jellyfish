@@ -1,5 +1,5 @@
 import React from 'react';
-
+var timer;
 class Section05 extends React.Component {
 
     constructor(props) {
@@ -12,7 +12,7 @@ class Section05 extends React.Component {
     }
 
     componentDidMount() {
-        setInterval(() => {
+        timer=setInterval(() => {
             let htmlPhotographer = [];
             let namePhotographer = [];
             let imgPhotographer = [];
@@ -34,6 +34,10 @@ class Section05 extends React.Component {
             )
         }, 15000)
     }
+
+    componentWillUnmount(){
+        clearTimeout(timer)
+      }
 
     render() {
         return (
