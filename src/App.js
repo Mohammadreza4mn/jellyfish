@@ -1,5 +1,6 @@
 import React from 'react';
-import Header from './components/Header';
+import {BrowserRouter as Router, Route} from 'react-router-dom';
+import Menu from './components/Menu';
 import Section01 from './components/Section01';
 import Section02 from './components/Section02';
 import Section03 from './components/Section03';
@@ -50,13 +51,25 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <Header />
-        <Section01 src={this.state.pic} picNumber={0} />
-        <Section02 src={this.state.pic} picNumber={1} />
-        <Section03 src={this.state.pic} picNumber={2} />
-        <Section04 src={this.state.pic} picNumber={3} />
-        <Section05 src={this.state.pic} />
-        <Footer />
+        <Router>
+          <Menu />
+              <Route exact path="/"
+                render={() => <Section01 src={this.state.pic} picNumber={0} />}
+              />
+              <Route exact path="/information"
+                render={() => <Section02 src={this.state.pic} picNumber={1} />}
+              />
+              <Route exact path="/structure"
+                render={() => <Section03 src={this.state.pic} picNumber={2}  />}
+              />
+              <Route exact path="/reproduction"
+                render={() => <Section04 src={this.state.pic} picNumber={3} />}
+              />
+              <Route exact path="/gallery"
+                render={() => <Section05 src={this.state.pic} />}
+              />
+          <Footer />
+        </Router>
       </div>
     )
   }
