@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5bb85bcade61071c60d625d6edef65f2",
+    "revision": "a3ed7e9ec722bde6b69239f3c1c0c1d2",
     "url": "/jellyfish/index.html"
   },
   {
-    "revision": "440c992a3ca241e39187",
+    "revision": "fdd7e8decb3cd3a2667b",
     "url": "/jellyfish/static/css/main.71b2c3fd.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/jellyfish/static/js/2.678c6cbf.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "440c992a3ca241e39187",
-    "url": "/jellyfish/static/js/main.bed153fb.chunk.js"
+    "revision": "fdd7e8decb3cd3a2667b",
+    "url": "/jellyfish/static/js/main.e3c1b788.chunk.js"
   },
   {
     "revision": "256d5416d9cd0612071e",
