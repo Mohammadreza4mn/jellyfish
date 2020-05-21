@@ -7,7 +7,7 @@ class Menu extends React.Component {
         return (
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="menu">
                 <div className="container">
-                    <Link to="/">
+                    <Link to="/jellyfish">
                         <img className="navbar-brand" id="logo" src="public/../assets/img/favicon.png" />
                     </Link>
                     <button className="navbar-toggler" data-toggle="collapse" data-target="#navbarMobile">
@@ -16,27 +16,27 @@ class Menu extends React.Component {
                     <div className="collapse navbar-collapse text-center" id="navbarMobile">
                         <ul className="navbar-nav nav-pills">
                             <li className="nav-item">
-                                <Link to="/">
+                                <Link to="/jellyfish">
                                     <p className="nav-link" >عروس دریایی</p>
                                 </Link>
                             </li>
                             <li className="nav-item">
-                                <Link to="/information">
+                                <Link to="/jellyfish/information">
                                     <p className="nav-link" >اطلاعات اولیه</p>
                                 </Link>
                             </li>
                             <li className="nav-item">
-                                <Link to="/structure">
+                                <Link to="/jellyfish/structure">
                                     <p className="nav-link" >ساختار عروس دریایی</p>
                                 </Link>
                             </li>
                             <li className="nav-item">
-                                <Link to="/reproduction">
+                                <Link to="/jellyfish/reproduction">
                                     <p className="nav-link" >تولید مثل عروس دریایی</p>
                                 </Link>
                             </li>
                             <li className="nav-item">
-                                <Link to="/gallery">
+                                <Link to="/jellyfish/gallery">
                                     <p className="nav-link" >گالری تصاویر</p>
                                 </Link>
                             </li>

@@ -53,19 +53,19 @@ class App extends React.Component {
       <div>
         <Router>
           <Menu />
-              <Route exact path="/"
+              <Route exact path="/jellyfish"
                 render={() => <Section01 src={this.state.pic} picNumber={0} />}
               />
-              <Route exact path="/information"
+              <Route exact path="/jellyfish/information"
                 render={() => <Section02 src={this.state.pic} picNumber={1} />}
               />
-              <Route exact path="/structure"
+              <Route exact path="/jellyfish/structure"
                 render={() => <Section03 src={this.state.pic} picNumber={2}  />}
               />
-              <Route exact path="/reproduction"
+              <Route exact path="/jellyfish/reproduction"
                 render={() => <Section04 src={this.state.pic} picNumber={3} />}
               />
-              <Route exact path="/gallery"
+              <Route exact path="/jellyfish/gallery"
                 render={() => <Section05 src={this.state.pic} />}
               />
           <Footer />
