@@ -1,6 +1,7 @@
 # About jellyfish :fish: <br/>
 :stopwatch: Every 15 seconds the background image is changed using [api unsplash](https://unsplash.com/developers) :framed_picture: <br />
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+:man_facepalming: Due to unsplash being a filter, I suggest using a vpn to run the program correctly and completely
 
 ## Available Scripts
 
